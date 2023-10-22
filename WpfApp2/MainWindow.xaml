@@ -1,0 +1,72 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="109" HorizontalAlignment="Left">
+                <Button Height="40" Width="100" Click="Add_Student">Student Add</Button>
+                <Button Height="40" Width="100" Click="Remove_Student">Student Remove</Button>
+                <Button Height="40" Width="100" Click="Add_Teacher">Teacher Add</Button>
+                <Button Height="40" Width="100" Click="Remove_Teacher">Teacher Remove</Button>
+                <Button Height="40" Width="100" Click="Add_Group">Group Add</Button>
+                <Button Height="40" Width="100" Click="Remove_Group">Group Remove</Button>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Height="250" Width="500" VerticalAlignment="Top">
+                <StackPanel Height="40" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="100">Firstname</TextBlock>
+                        <TextBlock Width="100">Lastname</TextBlock>
+                        <TextBlock Width="100">Average</TextBlock>
+                        <TextBlock Width="100">Group Id</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="Student_Firstname_TBox" Width="100"></TextBox>
+                        <TextBox x:Name="Student_Lastname_TBox" Width="100"></TextBox>
+                        <TextBox x:Name="Student_Average_TBox" Width="100"></TextBox>
+                        <TextBox x:Name="Student_GroupId_TBox" Width="100"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Height="40" Orientation="Vertical">
+                    <TextBlock Width="30" HorizontalAlignment="Left">Id</TextBlock>
+                    <TextBox x:Name="Id_Remove_Student" Width="30" HorizontalAlignment="Left"></TextBox>
+                </StackPanel>
+                <StackPanel Height="40">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="100">Firstname</TextBlock>
+                        <TextBlock Width="100">Lastname</TextBlock>
+                        <TextBlock Width="100">Average</TextBlock>
+                        <TextBlock Width="100">Group Id</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="Teacher_Firstname_TBox" Width="100"></TextBox>
+                        <TextBox x:Name="Teacher_Lastname_TBox" Width="100"></TextBox>
+                        <TextBox x:Name="Teacher_Average_TBox" Width="100"></TextBox>
+                        <TextBox x:Name="Teacher_GroupId_TBox" Width="100"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+                    <StackPanel Height="40" Orientation="Vertical">
+                        <TextBlock Width="30" HorizontalAlignment="Left">Id</TextBlock>
+                        <TextBox x:Name="Id_Remove_Teacher" Width="30" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                <StackPanel Height="40">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="100">Group name</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="Group_Name_TBox" Width="100"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Height="40">
+                    <TextBlock Width="30" HorizontalAlignment="Left">Id</TextBlock>
+                    <TextBox x:Name="Id_Remove_Group" Width="30" HorizontalAlignment="Left"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>
